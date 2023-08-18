@@ -16,6 +16,7 @@ jupyterlab = "^4.0.4"
 ipykernel = "^6.25.1"
 yfinance = "^0.2.27"
 datetime = "^5.2"
+pandas-datareader = "^0.10.0"
 
 
 [build-system]
