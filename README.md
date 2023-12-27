@@ -14,18 +14,32 @@ This repository provides tools and analysis for comparing different investment s
 - **Dollar-Cost Averaging Simulation**: Evaluate the performance of a periodic investment strategy over the same timeframe.
 - **Visualization**: Dynamic visual plots comparing the performance of both strategies.
 
+## Run
+Activate the Poetry virtual environment:
+```commandline
+poetry shell
+```
+Register the virtual environment as a Jupyter kernel:
+```commandline
+python -m ipykernel install --user --name your-kernel-name
+```
+Running Jupyter Lab:
+```commandline
+poetry run jupyter lab
+```
+Add Dependencies:
+```commandline
+poetry add pandas numpy scipy matplotlib
+```
+
+
+
 ## Usage
 
 1. Clone the repository to your local machine.
 2. Install the required libraries using the provided requirements file.
 3. Execute the main script to fetch the data and visualize the simulations.
 4. Adjust the parameters in the script to test different investment amounts and periods.
-
-## Dependencies
-
-- [yfinance](https://pypi.org/project/yfinance/)
-- [pandas](https://pypi.org/project/pandas/)
-- [matplotlib](https://pypi.org/project/matplotlib/)
 
 ## Contribution
 
