@@ -9,13 +9,13 @@ In this notebook, we explore the difference between dollar-cost averaging and lu
 We can see for a fact that for the majority of the time Lump Sum outperforms DCA with more than 70% of the times.
 
 Lump Sum results with initial investment of $5000 on 1/08/2012.
-![Lump Sum results with initial](images/lump_sum_5000_investment.png)
+![Lump Sum results with initial](notebooks/images/lump_sum_5000_investment.png)
 
 DCA results with initial investment of $5000 on 1/08/2012 and monthly invesments.
-![Lump Sum results with initial](images/dca_5000_investment.png)
+![Lump Sum results with initial](notebooks/images/dca_5000_investment.png)
 
 Difference Lump Sum vs DCA
-![Difference Lump Sum vs DCA](images/difference_plot.png)
+![Difference Lump Sum vs DCA](notebooks/images/difference_plot.png)
 
 
 2. **Lump-Sum and DCA Investing Simulatior**
