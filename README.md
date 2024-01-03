@@ -18,7 +18,7 @@ Comparing traditional and innovative investment strategies.
 ## Folder Structure and Contents
 
 - **DCA vs Lump Sum Analysis**:
-For an in-depth comparison between Dollar-Cost Averaging (DCA) and Lump-Sum investing strategies, please refer to the dedicated analysis in the [DCA_vs_LumpSum](./src_notebooks/DCA_vs_LumpSum.ipynb) folder.
+For an in-depth comparison between Dollar-Cost Averaging (DCA) and Lump-Sum investing strategies, please refer to the dedicated analysis in the [DCA_vs_LumpSum](./src_code/DCA_vs_LumpSum.ipynb) folder.
 
 ## Run Project
 Activate the Poetry virtual environment:
