@@ -1,20 +1,25 @@
 # portfolio-optimization Project
 A journey to efficient investing, quantum leaps in portfolio strategy.
 
-# Investment Strategy Analysis
+# Portfolio Strategy Analysis
 
-## Overview
+## Introduction
+Welcome to the Portfolio Strategy Analysis repository, where the art and science of investment converge. In the ever-fluctuating world of finance, making informed investment decisions is paramount. This project is dedicated to exploring, analyzing, and comparing a wide array of investment portfolios and their underlying strategies. Whether you are a seasoned investor, a financial analyst, or someone just beginning to navigate the complex world of investments, this repository offers valuable insights into the mechanics and performance of various portfolio strategies.
 
-This repository provides tools and analysis for comparing different investment strategies over historical market data, primarily focusing on the S&P 500. We contrast two primary investment approaches: lump-sum investing and dollar-cost averaging, simulating various investment amounts and durations.
 
-## Features
+## Project Objective
+The main goal is to dissect and understand how different investment strategies perform under various market conditions. We delve into traditional approaches like lump-sum investing and dollar-cost averaging, as well as more sophisticated strategies employed in modern portfolio theory. By leveraging historical data, analytical tools, and quantitative methods, we aim to provide a comprehensive study that serves as a resource for:
 
-- **Data Retrieval**: Fetches historical monthly data of the S&P 500 over the last thirty years.
-- **Lump-Sum Investing Simulation**: Observe the growth of a one-time investment in the S&P 500 over time.
-- **Dollar-Cost Averaging Simulation**: Evaluate the performance of a periodic investment strategy over the same timeframe.
-- **Visualization**: Dynamic visual plots comparing the performance of both strategies.
+Enhancing investment decision-making processes.
+Understanding risk and return dynamics.
+Comparing traditional and innovative investment strategies.
 
-## Run
+
+## Folder Structure and Contents
+
+- **DCA vs Lump Sum Analysis**: For an in-depth comparison between Dollar-Cost Averaging (DCA) and Lump-Sum investing strategies, please refer to the dedicated analysis in the [DCA_vs_LumpSum](./src_notebooks/DCA_vs_LumpSum.ipynb) folder.
+
+## Run Project
 Activate the Poetry virtual environment:
 ```commandline
 poetry shell
