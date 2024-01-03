@@ -1,4 +1,4 @@
-# portfolio-optimization Project
+# Portfolio-Optimization Project
 A journey to efficient investing, quantum leaps in portfolio strategy.
 
 # Portfolio Strategy Analysis
