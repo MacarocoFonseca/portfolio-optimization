@@ -38,7 +38,7 @@ class DollarCostAveragingInvestment(YahooTickerDataCollection):
         closest_investment_date = self.data.index.searchsorted(investment_dates)
 
         # Get a list of stock prices at the closest investment date
-        asset_prices = self.data["Adj Close"][closest_investment_date]
+        asset_prices = self.data["Adj Close"].iloc[closest_investment_date]
 
         # Get the total number of shares that I invested in by summing all of the shares purchased on each of the investment dates
         total_shares_invested = sum(investment_portion / asset_prices)
@@ -49,7 +49,7 @@ class DollarCostAveragingInvestment(YahooTickerDataCollection):
         )
 
         # Calculate the total
-        return uninvested_cash + self.data["Adj Close"][-1] * total_shares_invested
+        return uninvested_cash + self.data["Adj Close"].iloc[-1] * total_shares_invested
 
     def investment_generator(self):
         dca_list = []

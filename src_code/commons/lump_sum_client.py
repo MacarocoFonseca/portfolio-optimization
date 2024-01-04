@@ -19,7 +19,7 @@ class LumpSumInvestment(YahooTickerDataCollection):
         adj_close_prices = self.data["Adj Close"]
 
         # Get the latest prices values of the Stock/ETF within this data set
-        asset_latest_value = adj_close_prices[-1]
+        asset_latest_value = adj_close_prices.iloc[-1]
 
         # Get the number of shares bought on each date with the hypothetical investment amount (lump sum)
         num_shares_bought = self.lump_sum_amount / adj_close_prices
