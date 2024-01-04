@@ -25,6 +25,14 @@ Activate the Poetry virtual environment:
 ```commandline
 poetry shell
 ```
+Add Poetry library:
+```commandline
+poetry add <package>
+```
+Update Poetry dependencies:
+```commandline
+poetry update
+```
 Register the virtual environment as a Jupyter kernel:
 ```commandline
 python -m ipykernel install --user --name your-kernel-name
