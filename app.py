@@ -2,6 +2,7 @@ from json import load
 from textwrap import indent
 
 import matplotlib.pyplot as plt
+import pandas as pd
 import plotly.graph_objs as go
 import streamlit as st
 import yfinance as yf
@@ -13,7 +14,7 @@ def load_heading():
     """
     st.set_page_config(layout="wide")
     with st.container():
-        st.title("Portfolio Analysis")
+        st.title("Portfolio Analysis of multiple assets")
         header = st.subheader(
             "This App performs historical portfolio analysis and future analysis with Monte Carlo Simulation"
         )
@@ -24,40 +25,38 @@ def load_heading():
 def run():
     load_heading()
 
-    TICKER = "^GSPC"
-    SP500 = yf.Ticker(ticker=TICKER)
-    data = SP500.history(period="max")
+    # Sidebar
+    st.sidebar.title("Ticker selection")
 
-    # Convert the index to timezone-naive datetime.date
-    data.index = data.index.tz_localize(None).date
+    # Sidebar for ticker selection
+    TICKERS = ["^GSPC", "AAPL", "MSFT", "GOOGL"]
+    selected_tickers = st.sidebar.multiselect(
+        "Select tickers", TICKERS, default=["^GSPC"]
+    )
 
     # Date range selector
     st.sidebar.title("Filters")
     start_date, end_date = st.sidebar.date_input(
         "Select date range",
-        value=[min(data.index), max(data.index)],
-        min_value=min(data.index),
-        max_value=max(data.index),
+        value=[pd.to_datetime("2000-01-01"), pd.to_datetime("today")],
     )
 
-    # Filtered data based on selection
-    filtered_data = data[(data.index >= start_date) & (data.index <= end_date)]
+    # Initalize Plotly figure
+    fig = go.Figure()
 
-    # Plotly figure for closing price
-    fig = go.Figure(
-        data=[
-            go.Scatter(
-                x=filtered_data.index,
-                y=filtered_data["Close"],
-                mode="lines",
-                name="Close",
+    # Fetch and plot data for each select ticker
+    for ticker in TICKERS:
+        if ticker in selected_tickers:  # Ensure only selected tickers are shown
+            data = yf.Ticker(ticker).history(start=start_date, end=end_date)
+            fig.add_trace(
+                go.Scatter(x=data.index, y=data["Close"], mode="lines", name=ticker)
             )
-        ]
-    )
+
+    # Update plot layout
     fig.update_layout(
-        title="S&P 500 Closing Price",
+        title="Closing Price of selected Stocks",
         xaxis_title="Date",
-        yaxis_title="Closing Price",
+        yaxis_title="Closing Prices",
         hovermode="x",
     )
     st.plotly_chart(fig, use_container_width=True)
