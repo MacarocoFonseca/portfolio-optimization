@@ -14,10 +14,7 @@ Enhancing investment decision-making processes.
 Understanding risk and return dynamics.
 Comparing traditional and innovative investment strategies.
 
-
 ![Streamlit App overview](images/stream_lit_gif.gif)
-![Streamlit App overview](images/Streamlit_overview.png)
-
 
 ## Folder Structure and Contents
 
