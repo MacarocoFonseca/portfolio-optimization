@@ -39,7 +39,7 @@ def run():
     start_date, end_date = st.sidebar.date_input(
         "Select date range",
         value=[pd.to_datetime("2000-01-01"), pd.to_datetime("today")],
-    )
+    )  # type: ignore
 
     # Initalize Plotly figure
     fig = go.Figure()

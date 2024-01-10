@@ -20,6 +20,8 @@ pandas-datareader = "^0.10.0"
 jupyter = "^1.0.0"
 streamlit = "^1.29.0"
 plotly = "^5.18.0"
+yahoo-fin = "^0.8.9.1"
+pyportfolioopt = "^1.5.5"
 
 
 [build-system]
