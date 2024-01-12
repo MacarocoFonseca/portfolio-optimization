@@ -18,7 +18,8 @@ This notebook provides a detailed simulation of lump-sum investing in the S&P 50
 
 3. **Portfolio Optimization**
 [portfolio_optimization](./portfolio_optimization.ipynb)
-This notebook provides a detailed simulation of lump-sum investing in the S&P 500 index. It demonstrates the growth of a single, one-time investment over a long period, using historical market data.
+This notebook uses Efficient Frontier objective function to provide the max sharpe ratio to a given portfolio.
+![EfficientFrontierFigure](./figures/ef_scatter_notebook.png)
 
 4. **Portfolio Risk and Return Analysis**
 ...

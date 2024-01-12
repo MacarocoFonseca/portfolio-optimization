@@ -11,7 +11,7 @@ python = ">=3.9,<3.9.7 || >3.9.7,<3.13"
 pandas = "^2.0.3"
 numpy = "^1.25.2"
 scipy = "^1.11.1"
-matplotlib = "^3.7.2"
+matplotlib = "^3.8.2"
 jupyterlab = "^4.0.4"
 ipykernel = "^6.25.1"
 yfinance = "^0.2.27"
@@ -22,6 +22,7 @@ streamlit = "^1.29.0"
 plotly = "^5.18.0"
 yahoo-fin = "^0.8.9.1"
 pyportfolioopt = "^1.5.5"
+seaborn = "^0.13.1"
 
 
 [build-system]
