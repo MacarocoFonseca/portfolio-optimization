@@ -11,10 +11,10 @@ We can see for a fact that for the majority of the time Lump Sum outperforms DCA
 ![Lump Sum vs DCA](./figures/difference_plot.png)
 
 2. **Portfolio Visualization**
-[stock_portfolio_visualization](./stock_portfolio_visualization.ipynb) & [stock_portfolio_visualization](./asset_portfolio_visualization.ipynb)
+[stock_portfolio_visualization](./stock_portfolio_pie_chart.ipynb) & [stock_portfolio_visualization](./asset_portfolio_visualization.ipynb)
 This notebook provides a detailed simulation of lump-sum investing in the S&P 500 index. It demonstrates the growth of a single, one-time investment over a long period, using historical market data.
 
-![Lump Sum vs DCA](./figures/stock_portfolio_visualization_pie_chart.png) ![Lump Sum vs DCA](./figures/portfolio_diversification_analysis.png)
+![pie chart](./figures/stock_portfolio_visualization_pie_chart.png) ![Lump Sum vs DCA](./figures/portfolio_diversification_analysis.png)
 
 3. **Portfolio Optimization**
 [portfolio_optimization](./portfolio_optimization.ipynb)
