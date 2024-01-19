@@ -25,6 +25,7 @@ pyportfolioopt = "^1.5.5"
 seaborn = "^0.13.1"
 scikit-learn = "^1.3.2"
 quantstats = "^0.0.62"
+statsmodels = "^0.14.1"
 
 
 [build-system]
