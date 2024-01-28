@@ -16,6 +16,8 @@ Comparing traditional and innovative investment strategies.
 
 ![Streamlit App overview](images/stream_lit_gif.gif)
 
+![Pairs trading strategy](images/pairs_trading_returns.png)  
+
 ## Folder Structure and Contents
 
 - **DCA vs Lump Sum Analysis**:
