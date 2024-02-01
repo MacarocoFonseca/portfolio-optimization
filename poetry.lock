@@ -3058,24 +3058,22 @@ test = ["pytest (>=6,!=7.0.0,!=7.0.1)", "pytest-cov (>=3.0.0)", "pytest-qt"]
 
 [[package]]
 name = "quantstats"
-version = "0.0.62"
+version = "0.0.35"
 description = "Portfolio analytics for quants"
 optional = false
 python-versions = "*"
 files = [
-    {file = "QuantStats-0.0.62-py2.py3-none-any.whl", hash = "sha256:5b549d41d9edb2260ddc437440acfbb4e89cfe5388bc614247d61ec19bcdff10"},
-    {file = "QuantStats-0.0.62.tar.gz", hash = "sha256:64d8fa6284599c70d407debafbbc368b0d03bc67374ffdb4b4a0d19b335ef965"},
+    {file = "QuantStats-0.0.35.tar.gz", hash = "sha256:c09e9ad157f6cbbf76c7cace6d52e64486a64fffdb21f4a840152f7e9ea8f8a2"},
 ]
 
 [package.dependencies]
 matplotlib = ">=3.0.0"
 numpy = ">=1.16.5"
 pandas = ">=0.24.0"
-python-dateutil = ">=2.0"
 scipy = ">=1.2.0"
 seaborn = ">=0.9.0"
 tabulate = ">=0.8.0"
-yfinance = ">=0.1.70"
+yfinance = ">=0.1.63"
 
 [[package]]
 name = "referencing"
@@ -4219,4 +4217,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.9.7 || >3.9.7,<3.13"
-content-hash = "c268a4dbcaa087133954b182e597dffd4a1426f20354f3b01e28cde4372ba8e0"
+content-hash = "c1e066872ff760dfb4a1fb0e59424c5b56cbea55e8a122d93baa78a321e59dca"

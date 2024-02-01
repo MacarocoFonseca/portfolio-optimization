@@ -1,11 +1,12 @@
 from json import load
 from textwrap import indent
+import pandas as pd
 
 import matplotlib.pyplot as plt
-import pandas as pd
+
+import yfinance as yf
 import plotly.graph_objs as go
 import streamlit as st
-import yfinance as yf
 
 
 def load_heading():

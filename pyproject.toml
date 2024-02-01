@@ -24,8 +24,8 @@ yahoo-fin = "^0.8.9.1"
 pyportfolioopt = "^1.5.5"
 seaborn = "^0.13.1"
 scikit-learn = "^1.3.2"
-quantstats = "^0.0.62"
 statsmodels = "^0.14.1"
+quantstats = "0.0.35"
 
 
 [build-system]
