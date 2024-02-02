@@ -18,7 +18,7 @@ stock.plot_earnings(
     start_balance=10_000,
 )
 
-ticker_weights = {"AMZN": 0.5, "META": 0.1}
+ticker_weights = {"AMZN": 0.5, "META": 0.5}
 zukt_portfolio = qs.utils.make_index(ticker_weights)
 qs.reports.html(
     zukt_portfolio,
