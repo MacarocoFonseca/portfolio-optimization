@@ -1,6 +1,8 @@
 #!/usr/bin/env python3.9
-import quantstats as qs
+# Press shift enter to run in intereactive mode
 import os
+
+import quantstats as qs
 
 # Directory where the file will be saved
 output_dir = "portfolio_experiment/strategies/output"
@@ -19,7 +21,9 @@ stock.plot_earnings(
 )
 
 ticker_weights = {"AMZN": 0.5, "META": 0.5}
+
 zukt_portfolio = qs.utils.make_index(ticker_weights)
+
 qs.reports.html(
     zukt_portfolio,
     "qqq",

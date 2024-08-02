@@ -16,6 +16,8 @@ Comparing traditional and innovative investment strategies.
 
 ![Streamlit App overview](images/stream_lit_gif.gif)
 
+#### QuantStats library
+QuantStats is extensive financial metrics library build as a portfolio profiling tool. With it one can generate nice reports by using simple commands.
 By using QuantStats library we can have an enhanced overview of the strategy performance, the technical detail depth is compared with your prefered benchmark investment.
 ![Pairs trading strategy](images/pairs_trading_returns.png)  
 
